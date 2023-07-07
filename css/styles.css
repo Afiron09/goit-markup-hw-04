@@ -126,6 +126,9 @@ padding: 24px 0;
 .section-one {
   background-color: var(--primary-accent-color);
   padding: 188px 0;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+  
 }
 
 .title-main {
