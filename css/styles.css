@@ -11,6 +11,8 @@
   --address-text-color: #434455;
   --footer-text-color: #f4f4fd;
   --standart-border-button: #e7e9fc;
+  --icon-color: #4d5ae5;
+  --lightslate: #8e8f99;
 }
 
 body {
@@ -26,6 +28,8 @@ img {
 /*----------header---------*/
 
 .header {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -45,7 +49,6 @@ img {
 }
 
 .logo.link {
-
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -78,6 +81,8 @@ img {
 
 .nav-link {
   display: block;
+  position: relative;
+  color: #404bbf;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -98,13 +103,12 @@ img {
 
 .addr-link {
   display: block;
-padding: 24px 0;
+  padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--address-text-color);
   text-decoration: none;
-  
 }
 
 .link {
@@ -123,13 +127,26 @@ padding: 24px 0;
 
 /*---------section-one---------*/
 
+.two-inons-container {
+  background-color: var(--footer-text-color);
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
 .section-one {
   background-color: var(--primary-accent-color);
   padding: 188px 0;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
-        background-repeat: unset;
-  
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-bg.jpg);
+  background-position: center center;
 }
 
 .title-main {
@@ -243,7 +260,23 @@ padding: 24px 0;
 
 .section-four {
   padding: 120px 0;
-  background-color: #f4f4fd;
+  background-color: var(--footer-text-color);
+}
+
+.four-container-icons {
+  height: 40px;
+  width: 40px;
+  gap: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--icon-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--icon-color);
+}
+
+.four-icons {
+  fill: var(--footer-text-color);
 }
 
 .title-team {
@@ -268,7 +301,6 @@ padding: 24px 0;
   border-radius: 0px 0px 4px 4px;
 }
 
-
 .div-worker {
   padding: 32px 16px;
 }
@@ -277,11 +309,11 @@ padding: 24px 0;
   margin-top: 0;
   text-align: center;
   margin-bottom: 8px;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 1.2;
-      letter-spacing: 0.02em;
-      color: var(--primary-accent-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-accent-color);
 }
 
 .four-p {
@@ -290,8 +322,53 @@ padding: 24px 0;
   letter-spacing: 0.02em;
   font-size: 16px;
   text-align: center;
+  margin-bottom: 8px;
 }
 
+/* ---------five--------- */
+
+.section-five {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* .five-conteiner-icons {
+  border-radius: 4px;
+  border: 1px solid var(--lightslate, #8e8f99);
+  width: 168px;
+  height: 88px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.five-icons {
+  border-radius: 4px;
+  border: 1px solid var(--lightslate, #8e8f99);
+  width: 168px;
+  height: 88px;
+  display: flex;
+  fill: var(--lightslate);
+  gap: 24px;
+  position: relative;
+}
+
+.five-icons-use {
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+.title-icons {
+  margin-top: 0;
+  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--primary-accent-color);
+}
 
 /*----------Footer-----------*/
 .footer {
@@ -310,7 +387,7 @@ padding: 24px 0;
 }
 
 .span-footer {
-  color: #f4f4fd;
+  color: var(--footer-text-color);
 }
 
 .p-footer {
