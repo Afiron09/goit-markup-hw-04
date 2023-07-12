@@ -318,9 +318,19 @@ img {
 }
 
 .four-list-icons {
+}
+
+.four-item {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.four-list-icons {
   display: flex;
   gap: 24px;
-  justify-content: center;
 }
 
 .team {
@@ -343,6 +353,9 @@ img {
   height: 100%;
   background-color: #4d5ae5;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title-four {
