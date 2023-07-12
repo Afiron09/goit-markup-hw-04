@@ -329,6 +329,7 @@ img {
 }
 
 .four-list-icons {
+  justify-content: center;
   display: flex;
   gap: 24px;
 }
@@ -356,6 +357,11 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.four-link:hover,
+.four-link:focus {
+  color: var(--active-link-color);
 }
 
 .title-four {
