@@ -144,6 +144,7 @@ img {
 /*---------section-one---------*/
 
 .section-one {
+  margin: 0 auto;
   background-repeat: no-repeat;
   max-width: 1440px;
   background-color: var(--primary-accent-color);
@@ -423,6 +424,7 @@ img {
 
 .footer-cont {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo-p {
