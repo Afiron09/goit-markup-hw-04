@@ -570,8 +570,8 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.container-cover:hover .main-cover-text,
-.container-cover:focus .main-cover-text {
+.main-list:hover .main-cover-text,
+.main-list:focus .main-cover-text {
   transform: translateY(0%);
 }
 
